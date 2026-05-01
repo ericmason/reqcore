@@ -25,14 +25,24 @@ let _s3Client: S3Client | undefined
  */
 export function getS3Client(): S3Client {
   if (!_s3Client) {
+    // When S3_ACCESS_KEY/S3_SECRET_KEY are unset, omit the `credentials` block
+    // entirely and let the AWS SDK v3 default credential provider chain resolve
+    // them. That chain finds, in order: explicit env vars, AWS_PROFILE, IRSA's
+    // OIDC token file (AWS_WEB_IDENTITY_TOKEN_FILE + AWS_ROLE_ARN), ECS task
+    // role, and EC2 IMDSv2 — covering self-hosted EKS / ECS / EC2 deploys.
+    const hasExplicitCreds = Boolean(env.S3_ACCESS_KEY && env.S3_SECRET_KEY)
     _s3Client = new S3Client({
       endpoint: env.S3_ENDPOINT,
       region: env.S3_REGION,
-      credentials: {
-        accessKeyId: env.S3_ACCESS_KEY,
-        secretAccessKey: env.S3_SECRET_KEY,
-      },
       forcePathStyle: env.S3_FORCE_PATH_STYLE,
+      ...(hasExplicitCreds
+        ? {
+            credentials: {
+              accessKeyId: env.S3_ACCESS_KEY!,
+              secretAccessKey: env.S3_SECRET_KEY!,
+            },
+          }
+        : {}),
     })
   }
   return _s3Client
