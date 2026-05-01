@@ -22,16 +22,15 @@ const sourceQuery = computed(() => {
 useSeoMeta({
   title: 'Open Positions — Job Board',
   description:
-    'Browse open job positions on Reqcore and apply directly. Find your next career opportunity with companies that value transparency.',
-  ogTitle: 'Open Positions — Reqcore Job Board',
+    'Browse open job positions at Equisolve and apply directly. Find your next career opportunity with a team that values transparency.',
+  ogTitle: 'Open Positions — Equisolve Careers',
   ogDescription:
-    'Browse open job positions and apply directly. Powered by the open-source ATS you actually own.',
+    'Browse open job positions at Equisolve and apply directly.',
   ogType: 'website',
-  ogImage: '/reqcore-banner-github.jpeg',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Open Positions — Reqcore Job Board',
+  twitterTitle: 'Open Positions — Equisolve Careers',
   twitterDescription:
-    'Browse open job positions and apply directly.',
+    'Browse open job positions at Equisolve and apply directly.',
 })
 
 // ─────────────────────────────────────────────
