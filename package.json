@@ -60,14 +60,14 @@
   "devDependencies": {
     "@crowdin/cli": "^4.14.2",
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.1",
+    "@types/node": "^25.9.2",
     "@types/nodemailer": "^8.0.0",
     "@types/pdf-parse": "^1.1.5",
     "commander": "^13.1.0",
     "drizzle-kit": "^0.31.9",
     "tsx": "^4.22.4",
     "vitest": "^4.1.8",
-    "vue-tsc": "^3.3.3",
+    "vue-tsc": "^3.3.4",
     "wait-on": "^9.0.10"
   },
   "overrides": {
