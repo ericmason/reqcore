@@ -58,16 +58,16 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@crowdin/cli": "^4.14.2",
+    "@crowdin/cli": "^4.14.3",
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.2",
+    "@types/node": "^25.9.3",
     "@types/nodemailer": "^8.0.0",
     "@types/pdf-parse": "^1.1.5",
     "commander": "^13.1.0",
     "drizzle-kit": "^0.31.9",
     "tsx": "^4.22.4",
     "vitest": "^4.1.8",
-    "vue-tsc": "^3.3.4",
+    "vue-tsc": "^3.3.5",
     "wait-on": "^9.0.10"
   },
   "overrides": {
