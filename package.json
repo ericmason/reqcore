@@ -60,7 +60,7 @@
   "devDependencies": {
     "@crowdin/cli": "^4.15.1",
     "@playwright/test": "^1.63.0",
-    "@types/node": "^25.9.6",
+    "@types/node": "^25.9.7",
     "@types/nodemailer": "^8.0.0",
     "@types/pdf-parse": "^1.1.5",
     "commander": "^13.1.0",
