@@ -60,7 +60,7 @@
   "devDependencies": {
     "@crowdin/cli": "^4.15.1",
     "@playwright/test": "^1.63.0",
-    "@types/node": "^25.9.8",
+    "@types/node": "^25.9.9",
     "@types/nodemailer": "^8.0.0",
     "@types/pdf-parse": "^1.1.5",
     "commander": "^13.1.0",
@@ -68,7 +68,7 @@
     "tsx": "^4.23.15",
     "vitest": "^4.1.11",
     "vue-tsc": "^3.3.11",
-    "wait-on": "^9.1.0"
+    "wait-on": "^9.5.1"
   },
   "overrides": {
     "fast-xml-parser": ">=5.5.7",
