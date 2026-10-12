@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "@crowdin/cli": "^4.15.1",
-    "@playwright/test": "^1.63.0",
+    "@playwright/test": "^1.64.0",
     "@types/node": "^25.9.9",
     "@types/nodemailer": "^8.0.0",
     "@types/pdf-parse": "^1.1.5",
@@ -67,7 +67,7 @@
     "drizzle-kit": "^0.31.11",
     "tsx": "^4.23.15",
     "vitest": "^4.1.11",
-    "vue-tsc": "^3.3.11",
+    "vue-tsc": "^3.3.12",
     "wait-on": "^9.5.1"
   },
   "overrides": {
