@@ -67,7 +67,7 @@
     "drizzle-kit": "^0.31.11",
     "tsx": "^4.23.15",
     "vitest": "^4.1.12",
-    "vue-tsc": "^3.3.13",
+    "vue-tsc": "^3.3.14",
     "wait-on": "^9.5.1"
   },
   "overrides": {
